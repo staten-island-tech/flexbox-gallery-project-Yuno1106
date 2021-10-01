@@ -10,6 +10,7 @@ body,
 .parent {
   font-size: 20px;
 }
+
 h2 {
   margin: 10px;
 }
@@ -18,7 +19,7 @@ h2 {
 }
 
 .rem-size {
-  font-size: 2rem;
+  font-size: 5rem;
 }
 
 .em-size {
