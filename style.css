@@ -12,18 +12,18 @@ body {
 }
 
 .title {
+  margin: 5rem;
   text-align: center;
   font-size: 10rem;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   background-color: pink;
-  transition: all 0.3s ease-in-out;
+  animation-duration: 1.8s;
   animation-name: push-down;
-  animation-duration: 3s;
 }
 
 .container {
-  margin-top: 10rem;
+  margin-top: 0rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -33,11 +33,12 @@ body {
 
 .item {
   box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-  width: 26%;
+  width: 28%;
   height: 50rem;
-  margin: 3rem;
+  margin: 2rem;
   transition: all 0.3s ease-in-out;
   position: relative;
+  margin-top: 10rem;
 }
 
 .image {
@@ -57,24 +58,51 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.top {
-  margin-top: 10rem;
-}
-
 .push-down {
-  animation-duration: 3s;
   animation-name: push-down;
-  animation-iteration-count: 3;
-  animation-direction: alternate;
+  animation-direction: a;
 }
 
 @keyframes push-down {
   from {
-    top: 100rem;
+    margin: 0rem;
+  }
+  to {
+    margin: 5rem;
+  }
+}
+
+@media (min-width: 828px) {
+}
+
+@media (max-width: 828px) {
+  .item {
+    width: 35%;
+    font-size: 4rem;
+    margin: 2rem;
+  }
+  .top {
+    margin-top: 0rem;
   }
 
-  to {
-    margin: 10rem;
+  .title {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 505px) {
+  .item {
+    width: 50%;
+    font-size: 3rem;
+    margin: 2rem;
+  }
+
+  .title {
+    font-size: 6rem;
+  }
+
+  .top {
+    margin-top: 2rem;
   }
 }
 
