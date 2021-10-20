@@ -80,6 +80,7 @@ body {
     width: 35%;
     font-size: 4rem;
     margin: 2rem;
+    height: 40rem;
   }
   .top {
     margin-top: 0rem;
@@ -95,6 +96,7 @@ body {
     width: 50%;
     font-size: 3rem;
     margin: 2rem;
+    height: 30rem;
   }
 
   .title {
